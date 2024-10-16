@@ -14,14 +14,14 @@ class Autoload {
 
 	private $resolved = [];
 
+	public function __construct() {
+		spl_autoload_register( [ $this, 'load' ] );
+	}
+
 	public function add( $ns, $directory_path ) {
 		$ns_normalized = sprintf( '%s\\', rtrim( $ns, '\\' ) ); // Ensure we never match partial namespaces.
 
 		$this->paths[ $ns_normalized ] = rtrim( $directory_path, '\\/' ); // Remove trailing slashes for consistent concat.
-	}
-
-	public function init() {
-		spl_autoload_register( [ $this, 'load' ] );
 	}
 
 	public function load( $classname ) {

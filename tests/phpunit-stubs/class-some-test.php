@@ -2,6 +2,6 @@
 
 namespace Some_Vendor\Some_Package;
 
-class Test {
-
+class Some_Test {
+	use Something;
 }
