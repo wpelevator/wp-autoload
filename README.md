@@ -8,5 +8,3 @@ Example:
 
 	$autoload = new Autoload();
 	$autoload->add( 'Your_Vendor\Your_Namespace', __DIR__ . '/php' );
-
-	spl_autoload_register( [ $autoload, 'load' ] );
