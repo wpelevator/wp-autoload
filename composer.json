@@ -1,5 +1,7 @@
 {
 	"name": "wpelevator/wp-autoload",
+	"description": "PHP autoloader that supports files named according to WordPress coding standards",
+	"license": "MIT",
 	"autoload": {
 		"classmap": [
 			"php/"
