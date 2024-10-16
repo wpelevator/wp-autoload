@@ -1,0 +1,8 @@
+{
+	"name": "wpelevator/wp-autoload",
+	"autoload": {
+		"classmap": [
+			"php/"
+		]
+	}
+}
